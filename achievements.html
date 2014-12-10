@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	<head>
+		<title>1-UP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+		<!-- Custom -->
+		<link rel="stylesheet" href="flatly/bootstrap.css">
+		<link href="css/shop-homepage.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		<style>
+
+		body {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+			background-image: url("images/subtle_dots.png");
+		}
+
+		html{
+			overflow-x: hidden;
+		}
+
+		#splash{
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			margin-top: -20px;
+			margin-bottom: 40px;
+			overflow: hidden;
+			background-image:url("images/splash.jpeg");
+		}
+
+		.navbar {
+			-webkit-border-radius:0 !important;
+		}
+
+		.achievement a {
+			color: #dd4400;
+		}
+
+		.achievement > a, .achievement > a:hover, .achievement > a:focus {
+			color: #222;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a href="index.html"><img style="width: 100px; height: 60px; margin: -10; padding: 0;" src="images/logo_retina.png"/></a>
+		    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i style="padding-right: 10px;" class="fa fa-bars"></i> Shop</a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-male"></i> Apparel</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-paw"></i> Pets</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-home"></i> Home</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-plug"></i> Gadgets</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-paint-brush"></i> Art</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-book"></i> Media</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-suitcase"></i> Travel</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-plus"></i> Other</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-dollar"></i> By Price</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-gamepad"></i> By Brand</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-gift"></i> Gifts for Him</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-gift"></i> Gifts for Her</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#"><i style="padding-right: 10px;" class="fa fa-shopping-cart"></i> Cart</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i style="padding-right: 8px;" class="fa fa-question"></i> Help</a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-envelope"></i> Contact 1UP</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-wifi"></i> Live Support</a></li>
+	            <li><a href="#"><i style="padding-right: 7px; font-size: 12px;" class="fa fa-fw fa-question-circle"></i> FAQ</a></li>
+	            <li class="divider"></li>
+	            <li><a href="#">Terms of Service</a></li>
+	            <li><a href="#">Privacy</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="#"><i style="padding-right: 10px;" class="fa fa-sign-in"></i> Sign in</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="achievements.html"><i class="fa fa-trophy fa-lg achievement"></i></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container-fluid" style="margin-top: -21px; padding: 0px; width=100%; max-height: 550px; max-width: 1440px;">
+
+		<div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="images/header3_retina.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="images/header1_retina.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="images/header2_retina.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+	</div>
+
+	<div class="container" style="padding: 50px 25px 40px 25px;">
+
+		<div class="row">
+			<div class="col-sm-12">
+			<h2>Achievements</h2>
+			<small>Track your earned achievements on 1UP. For every 10 you earn, you unlock a new special, web-exclusive discount. <br/><br/><br/>
+			</small>
+			</div>
+		</div>
+
+		<div class="row" style="padding-bottom: 30px;">
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-male fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Fancy</h5>
+					<h6>Buy something from Apparel</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-paw fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Puppy Love</h5>
+					<h6>Buy something from Pets</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-home fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Warm and Cozy</h5>
+					<h6>Buy something from Home</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-plug fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Tech Geek</h5>
+					<h6>Buy something from Gadgets</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-paint-brush fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Art Snob</h5>
+					<h6>Buy something from Art</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-book fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Bookworm</h5>
+					<h6>Buy something from Media</h6>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-bottom: 30px;">
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-suitcase fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Around the World</h5>
+					<h6>Buy something from Travel</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-plus fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>"Meh"</h5>
+					<h6>Buy something from Other</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-comment fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Loudmouth</h5>
+					<h6>Comment on a product</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-comments fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Stop Talking</h5>
+					<h6>Comment over 100 times</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-check-circle fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>The Critic</h5>
+					<h6>Review a product</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-star fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Master of Judgment</h5>
+					<h6>Rate a product</h6>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-bottom: 30px;">
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-thumbs-up fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Master Rater</h5>
+					<h6>Rate over 50 times</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-rss fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Subscribe</h5>
+					<h6>Sign up for the newsletter</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-info fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Wait, What?</h5>
+					<h6>Read the FAQ</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-photo fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Picasso</h5>
+					<h6>Upload a product photo</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-smile-o fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>The Giver</h5>
+					<h6>Send a gift card to a friend</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-tablet fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>C U L8R</h5>
+					<h6>Access the mobile site</h6>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-bottom: 30px;">
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-birthday-cake fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>The 1 Year</h5>
+					<h6>Be a member for one year</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-bolt fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>The 5 Year</h5>
+					<h6>Be a member for five years</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-question fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>The 10 Year</h5>
+					<h6>This isn't even possible. How are you doing this?</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-users fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Hey, You Guys</h5>
+					<h6>Invite a friend</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements earned">
+					<i class="fa fa-sitemap fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Why</h5>
+					<h6>Access every page on our site</h6>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="achievements unearned">
+					<i class="fa fa-trophy fa-fw fa-3x" style="padding-top: 30px;"></i><br/><br/>
+					<h5>Gotta Catch 'Em All</h5>
+					<h6>Collect all achievements</h6>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
